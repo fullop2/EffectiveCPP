@@ -1,0 +1,17 @@
+// Item 1 : view c++ as federation of languagues
+/*
+ * C++은 다중패러다임 프로그래밍 언어(Multiparadigm Programming Languague)로 불린다
+ * 절차적(Procedural)
+ * 객체지향(Object-Oriented)
+ * 함수식(Functional)
+ * 일반화(Generic)
+ * 메타 프로그래밍(Meta Programming)
+ * 의 특성을 가지고 있다
+ *
+ * C++은
+ * C
+ * 객체지향 개념의 C++
+ * 템플릿 C++
+ * STL
+ * 의 연합체로 된 언어이므로 이 모든 언어의 관점에서 보고 생각해야 한다
+ */
