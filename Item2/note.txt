@@ -1,2 +1,7 @@
 단순한 상수를 쓸 때는 #define 보다 const 객체, enum을 우선으로 생각한다
 함수처럼 쓰이는 매크로를 만들려면, #define 매크로보다 inline 함수를 우선으로 생각한다
+
+member function 자체에 const가 붙게 되면 
+이 function이 class가 가지고 있는 fields를 변경하지 않는다는 보장을 받게 된다
+따라서 변경을 시도할 경우 오류를 출력하게 된다
+
