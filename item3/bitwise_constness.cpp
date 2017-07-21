@@ -15,7 +15,7 @@ int main()
 	const CTextBlock cctb("Hello");
 	char *pc = &cctb[0];
 
-	*pc = 'J';
+	*pc = 'J'; // 상수 객체지만 포인터를 통해 접근하면서 수정이 가능하게 되버림!
 	
 
 	return 0;
