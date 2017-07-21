@@ -13,8 +13,9 @@ class TextBlock
 		const char& operator[](std::size_t position) const // 상수 객체에 대한 operator[]
 		{ return text[position];};
 
-		char& operator[](std::size_t position) // 비상수 객체에 대한 operator[]
-		{ return text[position];};
+		char& operator[](std::size_t position) 	// 비상수 객체에 대한 operator[]
+		{ return text[position];};		// 비상수 객체의 return value가 ref type이 아닐 경우 복사 되므로 
+							// ref type으로 반환해야 제대로 값을 수정할 수 있음
 
 	private:
 		std::string text;
@@ -33,5 +34,7 @@ int main()
 
 	const TextBlock ctb("World");
 	std::cout << ctb[0];
-	//	ctb[0] = 'x';
+	//	ctb[0] = 'x'; 	// const TextBlock 타입이므로 상수 객체에 대한 
+				// operator[]이 호출되어 오류 발생
 }
+
