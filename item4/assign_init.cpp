@@ -1,4 +1,4 @@
-// 대입(assignment)과 초기화(initialization)을 헷갈리지 말자
+// 대입(assignment)과 초기화(initialization)를 헷갈리지 말자
 
 #include <string>
 #include <list>
@@ -9,7 +9,7 @@ class ABEntry		// ABEntry = "Address Book Entry"
 {
 	public:
 		ABEntry(const std::string& name, const std::string& address,
-				cibst stdLLkist<PhoneNumber>& phones);
+				cibst std::list<PhoneNumber>& phones);
 	private:
 		std::string theName;
 		std::string theAddress;
